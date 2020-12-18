@@ -1,0 +1,18 @@
+header nav {
+    background-color: #343a40;
+}
+.text-title {
+    color:white !important;
+}
+.text-title:hover {
+    color:white !important;
+    text-decoration: underline !important;
+}
+
+.custom-toggler.navbar-toggler  {
+    border-color: white;
+    color: white !important;
+}
+.navbar-toggler {
+    background-color: #343a40;
+}

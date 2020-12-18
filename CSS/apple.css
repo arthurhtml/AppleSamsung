@@ -1,0 +1,229 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Sous-menu avec ancre */
+.sous-menu {
+    background-color: #141414;
+    height: auto;
+}
+.sous-menu .row{
+    margin-right: 0 !important;
+}
+.sous-menu ul li a{
+    color: white;
+}
+.sous-menu ul li a:hover{
+    color:white;
+}
+
+
+      /* Page 1 */
+.first-part {
+    width: 100%;
+    height : 100vh;
+    position: relative;
+}
+.logo-of-apple {
+    width: 100%;
+}
+
+
+.apple-h3 {
+    color: #4e555b;
+}
+.apple-h2 {
+    color: #343a40;
+}
+#haut .row span{
+    font-size: 25px;
+
+}
+.title_history {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+          /* Page 2 */
+.second-part {
+    position: relative;
+    width:100%;
+    height:100vh;
+    margin-left: 0;
+ }
+.second-part #bg {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-image: url("../IMG/Steve_Jobs_essai.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 300px;
+
+}
+.third-part .create-apple {
+    margin-top: 6%;
+}
+.third-part #bg2 {
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-image: url("../IMG/apple1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1000px;
+}
+
+.next_computer {
+    max-width: 100%;
+}
+
+
+
+
+
+
+.first-page {
+    width : 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.seconde-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.security {
+    position: relative;
+    height: 300px;
+    background: #eff1ff;
+    background: radial-gradient(ellipse at center, #eff1ff 10%, #000 100%);
+    background-size: 54% 156%;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.write-security {
+    width : 700px;
+    height: 50%;
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+
+.default {
+    width: 100%;
+    height: 100vh;
+}
+
+.box-default {
+    width: 90%;
+    height: 95%;
+    display: block;
+    background-color: #F2F2F2;
+}
+.title-default {
+    font-size: 55px;
+    line-height: 1.0625;
+    max-width: 65%;
+}
+
+
+.dollars {
+    display: inline-flex;
+}
+.widget {
+    display: inline-flex;
+}
+
+.text-apple-default {
+    font-size: 23px;
+}
+
+
+
+
+                /*BAS DE PAGE */
+.bgbulle {
+    position: relative;
+
+}
+.bgbulle img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+            /* REVEAL EST UTILISER DANS UN PEU TOUTE LES PAGES */
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.5s cubic-bezier(.5, 0, 0, 1); /* premet de faire un effet d'accélération / décellération */
+}
+
+        /*LE CODE SELON LES TAILLES DE FENÊTRE*/
+@media (max-width: 1025px) {
+    .first-part {
+        height: auto;
+
+    }
+
+    #bg2 {
+        height: auto;
+        background-size: auto;
+    }
+
+
+    .iOS h3 {
+        text-align: left !important;
+        font-size: 25px !important;
+
+    }
+    .default {
+        height: auto;
+    }
+
+    .seconde-page {
+        height : auto;
+    }
+
+    .write-security {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 1380px){
+    .first-page {
+        height : auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .dollars, .widget {
+        flex-wrap: wrap;
+
+    }
+    .dollars img, .widget img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
